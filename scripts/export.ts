@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {join} from 'node:path';
+import {makeFeed,textFeed} from '../lib/feed.ts';
+const [input,output='data']=process.argv.slice(2);
+if(!input)throw new Error('用法：node --experimental-strip-types scripts/export.ts DASHBOARD_JSON OUTPUT_DIR');
+const feed=makeFeed(JSON.parse(readFileSync(input,'utf8'))),text=textFeed(feed);
+mkdirSync(output,{recursive:true});
+writeFileSync(join(output,'latest.json'),JSON.stringify(feed,null,2)+'\n');
+writeFileSync(join(output,'latest.txt'),text);
+writeFileSync(join(output,'latest.md'),text);
+const escape=(s:string)=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+writeFileSync(join(output,'index.html'),'<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>A股市场证据 · 独立数据出口</title><style>body{max-width:1100px;margin:32px auto;padding:0 20px;font:16px/1.7 system-ui;color:#243b32}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.65 ui-monospace,monospace}a{color:#276648}</style><h1>A股市场证据 · 独立数据出口</h1><p>供机器人直接读取的静态快照。数据来自机会观察站，日期与状态逐项保留。</p><p><a href="latest.txt">纯文本</a> · <a href="latest.json">JSON</a> · <a href="../README.md">使用说明</a></p><pre>'+escape(text)+'</pre></html>');
+console.log(JSON.stringify({market_date:feed.market_date,aligned:feed.aligned_count,total:feed.metric_count,json_bytes:Buffer.byteLength(JSON.stringify(feed)),text_bytes:Buffer.byteLength(text)}));
