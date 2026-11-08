@@ -1,8 +1,8 @@
 # A股市场证据 · 独立数据出口
 
-数据交易日：2026-11-06｜导出时间：2026-11-07T11:00:23.419Z｜同日有效：18/25
+数据交易日：2026-11-06｜导出时间：2026-11-08T11:00:33.478Z｜同日有效：18/25
 
-- 指数最新记录为2026-11-06，早于导出北京时间日期2026-11-07；本次导出不证明数据已更新至最新交易日，节假日需另核。
+- 指数最新记录为2026-11-06，早于导出北京时间日期2026-11-08；本次导出不证明数据已更新至最新交易日，节假日需另核。
 - exported_at仅为生成时间；每个指标以date为准。缺失不是0，旧值不参与同日联合确认。
 - change_1/change_5仅在沪深300交易日历对应前1/5期有有效值时计算；单位见change_unit；海外/汇率仅作独立背景。
 - ETF五期净申购看flow_5_sum，change_5是当日流量与五期前流量之差，两者不能混淆。
@@ -47,16 +47,16 @@
 - below_ma20_pct：腾讯前复权日线·SMA20广度；https://gu.qq.com/
 - new_low3_change：腾讯日线·新低扩散变化；https://gu.qq.com/
 - margin_balance：东方财富融资账户统计；https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPTA_WEB_MARGIN_DAILYTRADE&columns=ALL&pageNumber=1&pageSize=250&sortColumns=STATISTICS_DATE&sortTypes=-1
-- margin_net_repay：上海证券交易所；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251102&endDate=20261107&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
-- margin_pressure：上海证券交易所·计算；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251102&endDate=20261107&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
-- margin_pressure_change：上交所·沪市压力变化；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251102&endDate=20261107&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_net_repay：上海证券交易所；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251103&endDate=20261108&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_pressure：上海证券交易所·计算；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251103&endDate=20261108&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_pressure_change：上交所·沪市压力变化；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251103&endDate=20261108&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
 - advancers_pct：新浪全A行情·计算；https://finance.sina.com.cn/stock/
 - up_amount_pct：新浪全A行情·计算；https://finance.sina.com.cn/stock/
 - etf300_share_change：上海证券交易所ETF规模；https://query.sse.com.cn/commonQuery.do?isPagination=true&pageHelp.pageSize=10000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1&sqlId=COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L&STAT_DATE=2026-11-06
 - etf_creation：沪深交易所份额 / 东方财富单位净值·估算；https://www.sse.com.cn/market/funddata/volumn/etfvolumn/
 - dr007：中国货币网·DR007加权利率；https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/prr-md.json
 - funding_spread：中国货币网 / 人民银行·计算；https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/index.html
-- credit_spread：中债估值·同日同期限计算；https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-05-11&endDate=2026-11-07&gjqx=0&qxId=ycqx&locale=cn_ZH
+- credit_spread：中债估值·同日同期限计算；https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-05-12&endDate=2026-11-08&gjqx=0&qxId=ycqx&locale=cn_ZH
 - usdcnh：新浪财经·USD/CNH日线；https://vip.stock.finance.sina.com.cn/forex/api/jsonp.php/var%20_fx=/NewForexService.getDayKLine?symbol=fx_susdcnh
 - pe_ttm：中证指数；https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20230705&endDate=20261106
 - earnings_revision：东方财富预测快照·计算；https://data.eastmoney.com/report/profitforecast.html
