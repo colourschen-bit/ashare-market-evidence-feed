@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
-  "exported_at": "2026-11-12T11:14:38.632Z",
+  "exported_at": "2026-11-13T11:15:19.067Z",
   "mode": "refresh_then_export",
   "attempts": [
     {
       "part": "core",
       "batch": 1,
       "result": {
-        "status": "partial",
+        "status": "waiting",
         "results": [
           {
             "source": "沪深300日线",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 800,
             "comparison": {
-              "date": "2026-11-12",
-              "primary": 4043.925,
-              "secondary": 4043.93,
-              "difference": -0.004999999999654392,
+              "date": "2026-11-13",
+              "primary": 4016.29,
+              "secondary": 4016.29,
+              "difference": 0,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -26,13 +26,13 @@
           {
             "source": "上证指数日线",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 800,
             "comparison": {
-              "date": "2026-11-12",
-              "primary": 3655.83,
-              "secondary": 3655.83,
-              "difference": 0,
+              "date": "2026-11-13",
+              "primary": 3634.353,
+              "secondary": 3634.35,
+              "difference": 0.003000000000156433,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -40,13 +40,13 @@
           {
             "source": "中证500日线",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 800,
             "comparison": {
-              "date": "2026-11-12",
-              "primary": 6604.153,
-              "secondary": 6604.15,
-              "difference": 0.0030000000006111804,
+              "date": "2026-11-13",
+              "primary": 6465.485,
+              "secondary": 6465.49,
+              "difference": -0.005000000000109139,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -54,13 +54,13 @@
           {
             "source": "创业板指日线",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 800,
             "comparison": {
-              "date": "2026-11-12",
-              "primary": 2509.429,
-              "secondary": 2509.43,
-              "difference": -0.0009999999997489795,
+              "date": "2026-11-13",
+              "primary": 2426.084,
+              "secondary": 2426.08,
+              "difference": 0.0039999999999054126,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -68,13 +68,13 @@
           {
             "source": "深证成指日线",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 800,
             "comparison": {
-              "date": "2026-11-12",
-              "primary": 11197.977,
-              "secondary": 11197.98,
-              "difference": -0.002999999998792191,
+              "date": "2026-11-13",
+              "primary": 10968.787,
+              "secondary": 10968.79,
+              "difference": -0.0030000000006111804,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -85,40 +85,125 @@
             "records": 813,
             "date": "2026-11-11",
             "waitReason": "publication",
-            "message": "来源最新日期为2026-11-11，等待更新至已收盘参考日2026-11-12；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-11-11，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试"
           },
           {
             "source": "沪深300官方PB",
             "status": "waiting",
             "records": 1,
             "date": "2026-11-11",
-            "message": "来源最新日期为2026-11-11，等待更新至已收盘参考日2026-11-12；已有有效记录保留，稍后重试",
+            "message": "来源最新日期为2026-11-11，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试",
             "waitReason": "publication"
           },
           {
             "source": "融资账户余额",
             "status": "waiting",
             "records": 250,
-            "date": "2026-11-11",
+            "date": "2026-11-12",
             "waitReason": "publication",
-            "message": "来源最新日期为2026-11-11，等待更新至已收盘参考日2026-11-12；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-11-12，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试"
           },
           {
             "source": "沪市融资压力",
-            "status": "error",
-            "message": "来源正文或网络读取失败（query.sse.com.cn），已重试一次；保留旧记录：The operation was aborted due to timeout"
+            "status": "waiting",
+            "records": 245,
+            "date": "2026-11-12",
+            "reconciliationWarnings": [
+              {
+                "date": "2025-11-17",
+                "gapYuan": 10536
+              },
+              {
+                "date": "2025-12-08",
+                "gapYuan": -36439
+              },
+              {
+                "date": "2025-12-22",
+                "gapYuan": 16809933
+              },
+              {
+                "date": "2026-01-16",
+                "gapYuan": 421782
+              },
+              {
+                "date": "2026-01-22",
+                "gapYuan": 168023619
+              },
+              {
+                "date": "2026-05-29",
+                "gapYuan": 59720668
+              },
+              {
+                "date": "2026-06-09",
+                "gapYuan": -90393782
+              },
+              {
+                "date": "2026-06-22",
+                "gapYuan": -31346725
+              },
+              {
+                "date": "2026-07-14",
+                "gapYuan": -118
+              },
+              {
+                "date": "2026-07-17",
+                "gapYuan": -55359265
+              },
+              {
+                "date": "2026-07-27",
+                "gapYuan": -127
+              },
+              {
+                "date": "2026-07-31",
+                "gapYuan": -8165818
+              },
+              {
+                "date": "2026-09-15",
+                "gapYuan": 59164735
+              },
+              {
+                "date": "2026-09-21",
+                "gapYuan": 78993333
+              },
+              {
+                "date": "2026-09-22",
+                "gapYuan": 469629280
+              },
+              {
+                "date": "2026-10-15",
+                "gapYuan": -9833156
+              },
+              {
+                "date": "2026-10-30",
+                "gapYuan": -14666713
+              },
+              {
+                "date": "2026-11-03",
+                "gapYuan": -1083147
+              },
+              {
+                "date": "2026-11-09",
+                "gapYuan": 6585004112
+              },
+              {
+                "date": "2026-11-10",
+                "gapYuan": -6585004091
+              }
+            ],
+            "message": "来源最新日期为2026-11-12，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试",
+            "waitReason": "publication"
           },
           {
             "source": "中国货币网FDR007",
             "status": "ok",
             "records": 249,
-            "date": "2026-11-12"
+            "date": "2026-11-13"
           },
           {
             "source": "CBOE VIX",
             "status": "ok",
             "records": 700,
-            "date": "2026-11-11"
+            "date": "2026-11-12"
           }
         ]
       }
@@ -132,9 +217,9 @@
           {
             "source": "盈利预测快照与20日修正",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
-            "message": "已保存FY2027预测基线，沪深2644家，满足研报数≥3且有次年预测1633家。缺少20个交易日前的真实采集快照，已保存基线并等待积累；不把缺失记成0。",
+            "message": "已保存FY2027预测基线，沪深2650家，满足研报数≥3且有次年预测1637家。缺少20个交易日前的真实采集快照，已保存基线并等待积累；不把缺失记成0。",
             "waitReason": "history"
           }
         ]
@@ -149,7 +234,7 @@
           {
             "source": "DR007",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 1
           },
           {
@@ -160,13 +245,13 @@
           {
             "source": "中债信用利差",
             "status": "ok",
-            "date": "2026-11-12",
-            "records": 124
+            "date": "2026-11-13",
+            "records": 125
           },
           {
             "source": "离岸人民币",
             "status": "ok",
-            "date": "2026-11-11",
+            "date": "2026-11-12",
             "records": 500
           },
           {
@@ -175,7 +260,7 @@
             "date": "2026-10-27",
             "records": 3,
             "waitReason": "publication",
-            "message": "来源最新日期为2026-10-27，等待更新至已收盘参考日2026-11-12；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-10-27，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试"
           }
         ]
       }
@@ -189,9 +274,9 @@
           {
             "source": "全A上涨广度",
             "status": "ok",
-            "date": "2026-11-12",
-            "records": 0,
-            "message": "该交易日完整快照已保存"
+            "date": "2026-11-13",
+            "records": 5570,
+            "message": "收盘时钟与指数日历匹配；完整分页唯一性与成交额已核验，有效股票5570只 / 全部5578只。"
           }
         ]
       }
@@ -205,12 +290,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 3,
+            "progress": 1,
             "total": 53,
-            "message": "完整股票池扫描进度3/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度1/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -225,12 +310,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 4,
+            "progress": 2,
             "total": 53,
-            "message": "完整股票池扫描进度4/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度2/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -245,12 +330,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 5,
+            "progress": 3,
             "total": 53,
-            "message": "完整股票池扫描进度5/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度3/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -265,12 +350,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 6,
+            "progress": 4,
             "total": 53,
-            "message": "完整股票池扫描进度6/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度4/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -285,12 +370,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 7,
+            "progress": 5,
             "total": 53,
-            "message": "完整股票池扫描进度7/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度5/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -305,12 +390,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 8,
+            "progress": 6,
             "total": 53,
-            "message": "完整股票池扫描进度8/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度6/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -325,12 +410,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 9,
+            "progress": 7,
             "total": 53,
-            "message": "完整股票池扫描进度9/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度7/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -345,12 +430,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 10,
+            "progress": 8,
             "total": 53,
-            "message": "完整股票池扫描进度10/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度8/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -365,12 +450,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 11,
+            "progress": 9,
             "total": 53,
-            "message": "完整股票池扫描进度11/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度9/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -385,12 +470,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 12,
+            "progress": 10,
             "total": 53,
-            "message": "完整股票池扫描进度12/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度10/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -405,12 +490,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 13,
+            "progress": 11,
             "total": 53,
-            "message": "完整股票池扫描进度13/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度11/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -425,12 +510,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 14,
+            "progress": 12,
             "total": 53,
-            "message": "完整股票池扫描进度14/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度12/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -445,12 +530,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 15,
+            "progress": 13,
             "total": 53,
-            "message": "完整股票池扫描进度15/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度13/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -465,12 +550,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 16,
+            "progress": 14,
             "total": 53,
-            "message": "完整股票池扫描进度16/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度14/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -485,12 +570,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 17,
+            "progress": 15,
             "total": 53,
-            "message": "完整股票池扫描进度17/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度15/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -505,12 +590,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 18,
+            "progress": 16,
             "total": 53,
-            "message": "完整股票池扫描进度18/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度16/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -525,12 +610,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 19,
+            "progress": 17,
             "total": 53,
-            "message": "完整股票池扫描进度19/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度17/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -545,12 +630,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 20,
+            "progress": 18,
             "total": 53,
-            "message": "完整股票池扫描进度20/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度18/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -565,12 +650,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 21,
+            "progress": 19,
             "total": 53,
-            "message": "完整股票池扫描进度21/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度19/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -585,12 +670,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 22,
+            "progress": 20,
             "total": 53,
-            "message": "完整股票池扫描进度22/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度20/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -605,12 +690,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 23,
+            "progress": 21,
             "total": 53,
-            "message": "完整股票池扫描进度23/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度21/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -625,12 +710,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 24,
+            "progress": 22,
             "total": 53,
-            "message": "完整股票池扫描进度24/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度22/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -645,12 +730,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 25,
+            "progress": 23,
             "total": 53,
-            "message": "完整股票池扫描进度25/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度23/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -665,12 +750,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 26,
+            "progress": 24,
             "total": 53,
-            "message": "完整股票池扫描进度26/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度24/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -685,12 +770,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 27,
+            "progress": 25,
             "total": 53,
-            "message": "完整股票池扫描进度27/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度25/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -705,12 +790,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 28,
+            "progress": 26,
             "total": 53,
-            "message": "完整股票池扫描进度28/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度26/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -725,12 +810,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 29,
+            "progress": 27,
             "total": 53,
-            "message": "完整股票池扫描进度29/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度27/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -745,12 +830,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 30,
+            "progress": 28,
             "total": 53,
-            "message": "完整股票池扫描进度30/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度28/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -765,12 +850,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 31,
+            "progress": 29,
             "total": 53,
-            "message": "完整股票池扫描进度31/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度29/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -785,12 +870,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 32,
+            "progress": 30,
             "total": 53,
-            "message": "完整股票池扫描进度32/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度30/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -805,12 +890,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 33,
+            "progress": 31,
             "total": 53,
-            "message": "完整股票池扫描进度33/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度31/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -825,12 +910,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 34,
+            "progress": 32,
             "total": 53,
-            "message": "完整股票池扫描进度34/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度32/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -845,12 +930,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 35,
+            "progress": 33,
             "total": 53,
-            "message": "完整股票池扫描进度35/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度33/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -865,12 +950,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 36,
+            "progress": 34,
             "total": 53,
-            "message": "完整股票池扫描进度36/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度34/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -885,12 +970,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 37,
+            "progress": 35,
             "total": 53,
-            "message": "完整股票池扫描进度37/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度35/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -905,12 +990,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 38,
+            "progress": 36,
             "total": 53,
-            "message": "完整股票池扫描进度38/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度36/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -925,12 +1010,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 39,
+            "progress": 37,
             "total": 53,
-            "message": "完整股票池扫描进度39/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度37/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -945,12 +1030,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 40,
+            "progress": 38,
             "total": 53,
-            "message": "完整股票池扫描进度40/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度38/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -965,12 +1050,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 41,
+            "progress": 39,
             "total": 53,
-            "message": "完整股票池扫描进度41/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度39/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -985,12 +1070,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 42,
+            "progress": 40,
             "total": 53,
-            "message": "完整股票池扫描进度42/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度40/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1005,12 +1090,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 43,
+            "progress": 41,
             "total": 53,
-            "message": "完整股票池扫描进度43/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度41/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1025,12 +1110,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 44,
+            "progress": 42,
             "total": 53,
-            "message": "完整股票池扫描进度44/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度42/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1045,12 +1130,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 45,
+            "progress": 43,
             "total": 53,
-            "message": "完整股票池扫描进度45/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度43/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1065,12 +1150,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 46,
+            "progress": 44,
             "total": 53,
-            "message": "完整股票池扫描进度46/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度44/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1085,12 +1170,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 47,
+            "progress": 45,
             "total": 53,
-            "message": "完整股票池扫描进度47/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度45/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1105,12 +1190,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 48,
+            "progress": 46,
             "total": 53,
-            "message": "完整股票池扫描进度48/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度46/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1125,12 +1210,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 49,
+            "progress": 47,
             "total": 53,
-            "message": "完整股票池扫描进度49/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度47/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1145,12 +1230,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 50,
+            "progress": 48,
             "total": 53,
-            "message": "完整股票池扫描进度50/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度48/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1165,12 +1250,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
-            "progress": 51,
+            "progress": 49,
             "total": 53,
-            "message": "完整股票池扫描进度51/53；暂不发布部分家数；尚未发布新数值",
+            "message": "完整股票池扫描进度49/53；暂不发布部分家数；尚未发布新数值",
             "waitReason": "dependency"
           }
         ]
@@ -1185,7 +1270,47 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
+            "records": 0,
+            "complete": false,
+            "progress": 50,
+            "total": 53,
+            "message": "完整股票池扫描进度50/53；暂不发布部分家数；尚未发布新数值",
+            "waitReason": "dependency"
+          }
+        ]
+      }
+    },
+    {
+      "part": "newlow",
+      "batch": 51,
+      "result": {
+        "status": "waiting",
+        "results": [
+          {
+            "source": "沪深A股新低与均线广度",
+            "status": "waiting",
+            "date": "2026-11-13",
+            "records": 0,
+            "complete": false,
+            "progress": 51,
+            "total": 53,
+            "message": "完整股票池扫描进度51/53；暂不发布部分家数；尚未发布新数值",
+            "waitReason": "dependency"
+          }
+        ]
+      }
+    },
+    {
+      "part": "newlow",
+      "batch": 52,
+      "result": {
+        "status": "waiting",
+        "results": [
+          {
+            "source": "沪深A股新低与均线广度",
+            "status": "waiting",
+            "date": "2026-11-13",
             "records": 0,
             "complete": false,
             "progress": 52,
@@ -1198,19 +1323,19 @@
     },
     {
       "part": "newlow",
-      "batch": 51,
+      "batch": 53,
       "result": {
         "status": "ok",
         "results": [
           {
             "source": "沪深A股新低与均线广度",
             "status": "ok",
-            "date": "2026-11-12",
+            "date": "2026-11-13",
             "records": 21,
             "complete": true,
             "progress": 53,
             "total": 53,
-            "message": "完整扫描5217只沪深A股，最新有效样本5197只"
+            "message": "完整扫描5215只沪深A股，最新有效样本5197只"
           }
         ]
       }
@@ -1223,13 +1348,16 @@
         "results": [
           {
             "source": "沪深300ETF期权",
-            "status": "error",
-            "message": "来源HTTP 403（query.sse.com.cn）；保留旧记录"
+            "status": "waiting",
+            "records": 2,
+            "date": "2026-11-12",
+            "waitReason": "publication",
+            "message": "来源最新日期为2026-11-12，等待更新至已收盘参考日2026-11-13；已有有效记录保留，稍后重试"
           },
           {
             "source": "沪深300ETF固定30天平值IV",
             "status": "error",
-            "message": "来源HTTP 403（query.sse.com.cn）；保留旧记录"
+            "message": "合约资料日期与行情日期不一致"
           },
           {
             "source": "本地IV30/IV90期限结构",
@@ -1249,7 +1377,7 @@
           {
             "source": "固定宽基ETF篮子与份额",
             "status": "error",
-            "message": "最新篮子覆盖0/4，未发布不完整总额。2026-11-03上交所份额：Error: 来源HTTP 403（query.sse.com.cn）；保留旧记录；2026-11-04上交所份额：Error: 来源HTTP 403（query.sse.com.cn）；保留旧记录；2026-11-09上交所份额：Error: 来源HTTP 403（query.sse.com.cn）；保留旧记录"
+            "message": "最新篮子覆盖0/4，未发布不完整总额。2026-11-13上交所份额：Error: 510300份额缺失或日期不符：2026-11-13"
           }
         ]
       }
