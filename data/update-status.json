@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
-  "exported_at": "2026-11-18T11:23:30.754Z",
+  "exported_at": "2026-11-19T11:09:15.771Z",
   "mode": "refresh_then_export",
   "attempts": [
     {
       "part": "core",
       "batch": 1,
       "result": {
-        "status": "partial",
+        "status": "waiting",
         "results": [
           {
             "source": "沪深300日线",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 800,
             "comparison": {
-              "date": "2026-11-18",
-              "primary": 3983.767,
-              "secondary": 3983.77,
-              "difference": -0.003000000000156433,
+              "date": "2026-11-19",
+              "primary": 3984.84,
+              "secondary": 3984.84,
+              "difference": 0,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -26,13 +26,13 @@
           {
             "source": "上证指数日线",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 800,
             "comparison": {
-              "date": "2026-11-18",
-              "primary": 3587.832,
-              "secondary": 3587.83,
-              "difference": 0.0019999999999527063,
+              "date": "2026-11-19",
+              "primary": 3577.617,
+              "secondary": 3577.62,
+              "difference": -0.0029999999997016857,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -40,13 +40,13 @@
           {
             "source": "中证500日线",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 800,
             "comparison": {
-              "date": "2026-11-18",
-              "primary": 6282.216,
-              "secondary": 6282.22,
-              "difference": -0.0039999999999054126,
+              "date": "2026-11-19",
+              "primary": 6251.958,
+              "secondary": 6251.96,
+              "difference": -0.0020000000004074536,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -54,13 +54,13 @@
           {
             "source": "创业板指日线",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 800,
             "comparison": {
-              "date": "2026-11-18",
-              "primary": 2311.621,
-              "secondary": 2311.62,
-              "difference": 0.0010000000002037268,
+              "date": "2026-11-19",
+              "primary": 2293.342,
+              "secondary": 2293.34,
+              "difference": 0.0019999999999527063,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -68,13 +68,13 @@
           {
             "source": "深证成指日线",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 800,
             "comparison": {
-              "date": "2026-11-18",
-              "primary": 10659.411,
-              "secondary": 10659.41,
-              "difference": 0.0010000000002037268,
+              "date": "2026-11-19",
+              "primary": 10583.204,
+              "secondary": 10583.2,
+              "difference": 0.003999999998995918,
               "tolerance": 0.011
             },
             "message": "已与腾讯同日收盘交叉核验（允许舍入差≤0.011点）"
@@ -82,40 +82,125 @@
           {
             "source": "中证滚动PE",
             "status": "ok",
-            "records": 818,
-            "date": "2026-11-18"
+            "records": 819,
+            "date": "2026-11-19"
           },
           {
             "source": "沪深300官方PB",
             "status": "ok",
             "records": 1,
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "message": "官方每日PB快照；仅保存来源实际返回日期，不回填历史、不沿用到新日期。"
           },
           {
             "source": "融资账户余额",
             "status": "waiting",
             "records": 250,
-            "date": "2026-11-17",
+            "date": "2026-11-18",
             "waitReason": "publication",
-            "message": "来源最新日期为2026-11-17，等待更新至已收盘参考日2026-11-18；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-11-18，等待更新至已收盘参考日2026-11-19；已有有效记录保留，稍后重试"
           },
           {
             "source": "沪市融资压力",
-            "status": "error",
-            "message": "Unexpected token '(', \"\n({\"jsonCal\"... is not valid JSON"
+            "status": "waiting",
+            "records": 245,
+            "date": "2026-11-18",
+            "reconciliationWarnings": [
+              {
+                "date": "2025-11-17",
+                "gapYuan": 10536
+              },
+              {
+                "date": "2025-12-08",
+                "gapYuan": -36439
+              },
+              {
+                "date": "2025-12-22",
+                "gapYuan": 16809933
+              },
+              {
+                "date": "2026-01-16",
+                "gapYuan": 421782
+              },
+              {
+                "date": "2026-01-22",
+                "gapYuan": 168023619
+              },
+              {
+                "date": "2026-05-29",
+                "gapYuan": 59720668
+              },
+              {
+                "date": "2026-06-09",
+                "gapYuan": -90393782
+              },
+              {
+                "date": "2026-06-22",
+                "gapYuan": -31346725
+              },
+              {
+                "date": "2026-07-14",
+                "gapYuan": -118
+              },
+              {
+                "date": "2026-07-17",
+                "gapYuan": -55359265
+              },
+              {
+                "date": "2026-07-27",
+                "gapYuan": -127
+              },
+              {
+                "date": "2026-07-31",
+                "gapYuan": -8165818
+              },
+              {
+                "date": "2026-09-15",
+                "gapYuan": 59164735
+              },
+              {
+                "date": "2026-09-21",
+                "gapYuan": 78993333
+              },
+              {
+                "date": "2026-09-22",
+                "gapYuan": 469629280
+              },
+              {
+                "date": "2026-10-15",
+                "gapYuan": -9833156
+              },
+              {
+                "date": "2026-10-30",
+                "gapYuan": -14666713
+              },
+              {
+                "date": "2026-11-03",
+                "gapYuan": -1083147
+              },
+              {
+                "date": "2026-11-09",
+                "gapYuan": 6585004112
+              },
+              {
+                "date": "2026-11-10",
+                "gapYuan": -6585004091
+              }
+            ],
+            "message": "来源最新日期为2026-11-18，等待更新至已收盘参考日2026-11-19；已有有效记录保留，稍后重试",
+            "waitReason": "publication"
           },
           {
             "source": "中国货币网FDR007",
             "status": "ok",
             "records": 249,
-            "date": "2026-11-18"
+            "date": "2026-11-19"
           },
           {
             "source": "CBOE VIX",
             "status": "ok",
             "records": 700,
-            "date": "2026-11-17"
+            "date": "2026-11-18"
           }
         ]
       }
@@ -129,9 +214,9 @@
           {
             "source": "盈利预测快照与20日修正",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
-            "message": "已保存FY2027预测基线，沪深2631家，满足研报数≥3且有次年预测1636家。缺少20个交易日前的真实采集快照，已保存基线并等待积累；不把缺失记成0。",
+            "message": "已保存FY2027预测基线，沪深2628家，满足研报数≥3且有次年预测1637家。缺少20个交易日前的真实采集快照，已保存基线并等待积累；不把缺失记成0。",
             "waitReason": "history"
           }
         ]
@@ -146,7 +231,7 @@
           {
             "source": "DR007",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 1
           },
           {
@@ -157,13 +242,13 @@
           {
             "source": "中债信用利差",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 124
           },
           {
             "source": "离岸人民币",
             "status": "ok",
-            "date": "2026-11-17",
+            "date": "2026-11-18",
             "records": 500
           },
           {
@@ -172,7 +257,7 @@
             "date": "2026-10-27",
             "records": 3,
             "waitReason": "publication",
-            "message": "来源最新日期为2026-10-27，等待更新至已收盘参考日2026-11-18；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-10-27，等待更新至已收盘参考日2026-11-19；已有有效记录保留，稍后重试"
           }
         ]
       }
@@ -186,7 +271,7 @@
           {
             "source": "全A上涨广度",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 5572,
             "message": "收盘时钟与指数日历匹配；完整分页唯一性与成交额已核验，有效股票5572只 / 全部5579只。"
           }
@@ -202,7 +287,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 1,
@@ -222,7 +307,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 2,
@@ -242,7 +327,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 3,
@@ -262,7 +347,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 4,
@@ -282,7 +367,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 5,
@@ -302,7 +387,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 6,
@@ -322,7 +407,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 7,
@@ -342,7 +427,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 8,
@@ -362,7 +447,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 9,
@@ -382,7 +467,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 10,
@@ -402,7 +487,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 11,
@@ -422,7 +507,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 12,
@@ -442,7 +527,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 13,
@@ -462,7 +547,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 14,
@@ -482,7 +567,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 15,
@@ -502,7 +587,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 16,
@@ -522,7 +607,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 17,
@@ -542,7 +627,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 18,
@@ -562,7 +647,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 19,
@@ -582,7 +667,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 20,
@@ -602,7 +687,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 21,
@@ -622,7 +707,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 22,
@@ -642,7 +727,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 23,
@@ -662,7 +747,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 24,
@@ -682,7 +767,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 25,
@@ -702,7 +787,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 26,
@@ -722,7 +807,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 27,
@@ -742,7 +827,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 28,
@@ -762,7 +847,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 29,
@@ -782,7 +867,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 30,
@@ -802,7 +887,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 31,
@@ -822,7 +907,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 32,
@@ -842,7 +927,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 33,
@@ -862,7 +947,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 34,
@@ -882,7 +967,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 35,
@@ -902,7 +987,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 36,
@@ -922,7 +1007,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 37,
@@ -942,7 +1027,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 38,
@@ -962,7 +1047,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 39,
@@ -982,7 +1067,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 40,
@@ -1002,7 +1087,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 41,
@@ -1022,7 +1107,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 42,
@@ -1042,7 +1127,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 43,
@@ -1062,7 +1147,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 44,
@@ -1082,7 +1167,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 45,
@@ -1102,7 +1187,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 46,
@@ -1122,7 +1207,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 47,
@@ -1142,7 +1227,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 48,
@@ -1162,7 +1247,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 49,
@@ -1182,7 +1267,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 50,
@@ -1202,7 +1287,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 51,
@@ -1222,7 +1307,7 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "waiting",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 0,
             "complete": false,
             "progress": 52,
@@ -1242,12 +1327,12 @@
           {
             "source": "沪深A股新低与均线广度",
             "status": "ok",
-            "date": "2026-11-18",
+            "date": "2026-11-19",
             "records": 21,
             "complete": true,
             "progress": 53,
             "total": 53,
-            "message": "完整扫描5216只沪深A股，最新有效样本5202只"
+            "message": "完整扫描5216只沪深A股，最新有效样本5201只"
           }
         ]
       }
@@ -1262,9 +1347,9 @@
             "source": "沪深300ETF期权",
             "status": "waiting",
             "records": 2,
-            "date": "2026-11-17",
+            "date": "2026-11-18",
             "waitReason": "publication",
-            "message": "来源最新日期为2026-11-17，等待更新至已收盘参考日2026-11-18；已有有效记录保留，稍后重试"
+            "message": "来源最新日期为2026-11-18，等待更新至已收盘参考日2026-11-19；已有有效记录保留，稍后重试"
           },
           {
             "source": "沪深300ETF固定30天平值IV",
@@ -1289,7 +1374,7 @@
           {
             "source": "固定宽基ETF篮子与份额",
             "status": "error",
-            "message": "最新篮子覆盖0/4，未发布不完整总额。2026-11-18上交所份额：Error: 510300份额缺失或日期不符：2026-11-18"
+            "message": "最新篮子覆盖0/4，未发布不完整总额。2026-11-19上交所份额：Error: 510300份额缺失或日期不符：2026-11-19"
           }
         ]
       }

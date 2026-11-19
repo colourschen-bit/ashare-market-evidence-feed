@@ -1,6 +1,6 @@
 # A股市场证据 · 独立数据出口
 
-数据交易日：2026-11-18｜导出时间：2026-11-18T11:23:30.754Z｜同日有效：12/25
+数据交易日：2026-11-19｜导出时间：2026-11-19T11:09:15.771Z｜同日有效：12/25
 
 - exported_at仅为生成时间；每个指标以date为准。缺失不是0，旧值不参与同日联合确认。
 - change_1/change_5仅在沪深300交易日历对应前1/5期有有效值时计算；单位见change_unit；海外/汇率仅作独立背景。
@@ -9,31 +9,31 @@
 
 |指标|值|单位|数据日期|状态|前1期变化|前5期变化|变化单位|ETF五期累计|
 |---|---:|---|---|---|---:|---:|---|---:|
-|指数收盘|3983.767|点|2026-11-18|same_date|7.304|-91.942|点|缺失|
-|单日涨跌幅|0.1837|%|2026-11-18|same_date|0.2676|-0.2252|百分点|缺失|
-|20EMA乖离率|-2.0781|%|2026-11-18|same_date|0.3929|-1.1318|百分点|缺失|
-|ATR标准化偏离|-1.274|倍|2026-11-18|same_date|0.2241|-0.7257|倍|缺失|
-|沪深A股20日收盘新低家数|2119|家|2026-11-18|same_date|146|2068|家|缺失|
-|沪深A股低于20日均线比例|84.6213|%|2026-11-18|same_date|2.679|42.6883|百分点|缺失|
-|新低家数3日变化|1532.6667|家|2026-11-18|same_date|280.3333|1538.6667|家|缺失|
-|融资余额|22170.8205|亿元|2026-11-17|stale|-186.3614|-485.7187|亿元|缺失|
-|沪市融资净偿还额|86.7179|亿元|2026-11-13|update_failed|98.575|-32.8952|亿元|缺失|
-|沪市融资净偿还强度|0.7362|%|2026-11-13|update_failed|0.8369|-0.2768|百分点|缺失|
-|沪市融资压力3日变化|-0.0348|百分点|2026-11-13|update_failed|0.3129|0.8949|百分点|缺失|
-|上涨股票比例|23.654|%|2026-11-18|same_date|-0.1256|缺失|百分点|缺失|
-|上涨股票成交额占比|48.1684|%|2026-11-18|same_date|12.2982|缺失|百分点|缺失|
-|300ETF每日份额变化|13.419|亿份|2026-11-17|update_failed|-0.36|16.677|亿份|缺失|
-|固定4只宽基ETF净申购估算|94.9395|亿元|2026-11-17|update_failed|6.1503|127.5612|亿元|41.863|
-|银银间7天回购利率|1.385|%|2026-11-18|same_date|-0.0236|-0.0068|百分点|缺失|
+|指数收盘|3984.84|点|2026-11-19|same_date|1.073|-59.085|点|缺失|
+|单日涨跌幅|0.0269|%|2026-11-19|same_date|-0.1567|0.8068|百分点|缺失|
+|20EMA乖离率|-1.86|%|2026-11-19|same_date|0.2181|-0.3023|百分点|缺失|
+|ATR标准化偏离|-1.1585|倍|2026-11-19|same_date|0.1156|-0.2377|倍|缺失|
+|沪深A股20日收盘新低家数|3173|家|2026-11-19|same_date|1054|2991|家|缺失|
+|沪深A股低于20日均线比例|88.3484|%|2026-11-19|same_date|3.7301|31.5245|百分点|缺失|
+|新低家数3日变化|1670.6667|家|2026-11-19|same_date|138|1680.3333|家|缺失|
+|融资余额|22082.4795|亿元|2026-11-18|stale|-88.341|-648.8028|亿元|缺失|
+|沪市融资净偿还额|32.908|亿元|2026-11-18|stale|-45.3311|56.4602|亿元|缺失|
+|沪市融资净偿还强度|0.2857|%|2026-11-18|stale|-0.3889|0.4862|百分点|缺失|
+|沪市融资压力3日变化|0.4446|百分点|2026-11-18|stale|-0.4745|0.8887|百分点|缺失|
+|上涨股票比例|11.6296|%|2026-11-19|same_date|-12.0244|-4.0739|百分点|缺失|
+|上涨股票成交额占比|31.8022|%|2026-11-19|same_date|-16.3662|2.958|百分点|缺失|
+|300ETF每日份额变化|13.41|亿份|2026-11-18|update_failed|-0.009|15.786|亿份|缺失|
+|固定4只宽基ETF净申购估算|97.7709|亿元|2026-11-18|update_failed|2.8314|123.9935|亿元|165.8564|
+|银银间7天回购利率|1.3592|%|2026-11-19|same_date|-0.0258|-0.0368|百分点|缺失|
 |DR007相对政策利率|-5|bp|2026-10-27|stale|-2.66|缺失|bp|缺失|
-|信用利差|42.8|bp|2026-11-18|same_date|-2.29|6.36|bp|缺失|
-|美元兑离岸人民币|6.667|CNH/美元|2026-11-17|background_only|0.036|-0.1393|%|缺失|
-|沪深300滚动市盈率|13.09|倍|2026-11-18|same_date|0.04|-0.05|倍|缺失|
+|信用利差|40.88|bp|2026-11-19|same_date|-1.92|2.15|bp|缺失|
+|美元兑离岸人民币|6.6682|CNH/美元|2026-11-18|background_only|0.018|-0.0824|%|缺失|
+|沪深300滚动市盈率|13.09|倍|2026-11-19|same_date|0|0.01|倍|缺失|
 |盈利上修净比例（预测EPS代理）|缺失|百分点|缺失|missing|缺失|缺失|百分点|缺失|
 |沪深300ETF 30日平值IV估算|21.0104|%|2026-11-03|update_failed|缺失|缺失|百分点|缺失|
 |本地IV30 / IV90估算|1.023|倍|2026-11-03|stale|缺失|缺失|倍|缺失|
-|沪深300ETF认沽认购成交比|0.3132|倍|2026-11-17|stale|-0.4868|-0.1737|倍|缺失|
-|美国VIX收盘|25.46||2026-11-17|background_only|2.55|6||缺失|
+|沪深300ETF认沽认购成交比|0.6023|倍|2026-11-18|stale|0.289|-0.0376|倍|缺失|
+|美国VIX收盘|24.56||2026-11-18|background_only|-0.9|7.07||缺失|
 
 状态：same_date=与指数记录同日且有效；stale=日期滞后；missing=缺失；update_failed=最近更新失败；manual_unverified=手工待核；background_only=海外/汇率背景。
 前1/5期的起始日期、来源、指标定义及限制见同目录latest.json；同日有效仅相对market_date，不保证是今天。
@@ -46,20 +46,20 @@
 - below_ma20_pct：腾讯前复权日线·SMA20广度；https://gu.qq.com/
 - new_low3_change：腾讯日线·新低扩散变化；https://gu.qq.com/
 - margin_balance：东方财富融资账户统计；https://datacenter-web.eastmoney.com/api/data/v1/get?reportName=RPTA_WEB_MARGIN_DAILYTRADE&columns=ALL&pageNumber=1&pageSize=250&sortColumns=STATISTICS_DATE&sortTypes=-1
-- margin_net_repay：上海证券交易所；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251111&endDate=20261116&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
-- margin_pressure：上海证券交易所·计算；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251111&endDate=20261116&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
-- margin_pressure_change：上交所·沪市压力变化；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251111&endDate=20261116&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_net_repay：上海证券交易所；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251114&endDate=20261119&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_pressure：上海证券交易所·计算；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251114&endDate=20261119&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
+- margin_pressure_change：上交所·沪市压力变化；https://query.sse.com.cn/marketdata/tradedata/queryMargin.do?isPagination=true&beginDate=20251114&endDate=20261119&tabType=&stockCode=&pageHelp.pageSize=5000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=5
 - advancers_pct：新浪全A行情·计算；https://finance.sina.com.cn/stock/
 - up_amount_pct：新浪全A行情·计算；https://finance.sina.com.cn/stock/
-- etf300_share_change：上海证券交易所ETF规模；https://query.sse.com.cn/commonQuery.do?isPagination=true&pageHelp.pageSize=10000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1&sqlId=COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L&STAT_DATE=2026-11-17
+- etf300_share_change：上海证券交易所ETF规模；https://query.sse.com.cn/commonQuery.do?isPagination=true&pageHelp.pageSize=10000&pageHelp.pageNo=1&pageHelp.beginPage=1&pageHelp.cacheSize=1&pageHelp.endPage=1&sqlId=COMMON_SSE_ZQPZ_ETFZL_XXPL_ETFGM_SEARCH_L&STAT_DATE=2026-11-18
 - etf_creation：沪深交易所份额 / 东方财富单位净值·估算；https://www.sse.com.cn/market/funddata/volumn/etfvolumn/
 - dr007：中国货币网·DR007加权利率；https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/prr-md.json
 - funding_spread：中国货币网 / 人民银行·计算；https://www.pbc.gov.cn/zhengcehuobisi/125207/125213/125431/125475/index.html
-- credit_spread：中债估值·同日同期限计算；https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-05-22&endDate=2026-11-18&gjqx=0&qxId=ycqx&locale=cn_ZH
+- credit_spread：中债估值·同日同期限计算；https://yield.chinabond.com.cn/cbweb-pbc-web/pbc/historyQuery?startDate=2026-05-23&endDate=2026-11-19&gjqx=0&qxId=ycqx&locale=cn_ZH
 - usdcnh：新浪财经·USD/CNH日线；https://vip.stock.finance.sina.com.cn/forex/api/jsonp.php/var%20_fx=/NewForexService.getDayKLine?symbol=fx_susdcnh
-- pe_ttm：中证指数；https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20230705&endDate=20261118
+- pe_ttm：中证指数；https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20230705&endDate=20261119
 - earnings_revision：东方财富预测快照·计算；https://data.eastmoney.com/report/profitforecast.html
 - local_iv30：上交所合约 / 新浪报价·平值IV估算；https://www.sse.com.cn/assortment/options/risk/
 - iv_term：上交所合约 / 新浪报价·期限结构估算；https://www.sse.com.cn/assortment/options/risk/
-- put_call：上交所510300期权；https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_YSP_QQ_SJTJ_MRTJ_CX&tradeDate=20261117
+- put_call：上交所510300期权；https://query.sse.com.cn/commonQuery.do?isPagination=false&sqlId=COMMON_SSE_ZQPZ_YSP_QQ_SJTJ_MRTJ_CX&tradeDate=20261118
 - vix：CBOE；https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv
