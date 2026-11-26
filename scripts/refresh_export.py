@@ -4,7 +4,7 @@ Run from repository root. Requires Python 3 and Node >=22.18. No dependencies.
 """
 import argparse, json, os, pathlib, subprocess, sys, tempfile, time, urllib.request
 
-ORIGIN = 'https://ashare-opportunity-observatory.safefawn35.chatgpt.site'
+ORIGIN = 'https://ashare-opportunity-observatory.colours-chen.chatgpt.site'
 
 PARTS=['core', 'earnings', 'funding', 'breadth', 'newlow', 'options', 'etf']
 

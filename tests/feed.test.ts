@@ -6,9 +6,21 @@ const dates=['2026-10-26','2026-10-27','2026-10-28','2026-10-29','2026-10-30','2
 const s=(id:string,vs:[string,number][]):Series=>({metric:id,scope:scopeFor(METRICS.find(m=>m.id===id)!,'000300'),updatedAt:now.toISOString(),points:vs.map(([date,value])=>({date,value,source:'测试来源',sourceUrl:'https://example.com',publishedAt:null,availableAt:now.toISOString(),quality:'observed'}))});
 const base=()=>({index:'000300',generatedAt:now.toISOString(),series:[s('close',dates.map((d,i)=>[d,100+i]))]});
 test('stale, missing and failed observations are never same-day confirmation; zero is valid',()=>{
- const d=base();d.series.push(s('advancers_pct',[[dates[4],40]]),s('funding_spread',[[dates[6],0]]),s('local_iv30',[[dates[6],25]]));
+ const d=base();d.series.push(s('advancers_pct',[[dates[4],40]]),s('funding_spread_on',[[dates[6],0]]),s('local_iv30',[[dates[6],25]]));
  const f=makeFeed({...d,sourceAudit:{rows:[{metric:'local_iv30',attempt:{status:'error'}}]}},now);
- assert.equal(f.metrics.find(m=>m.id==='advancers_pct')!.status,'stale');assert.equal(f.metrics.find(m=>m.id==='funding_spread')!.value,0);assert.equal(f.metrics.find(m=>m.id==='local_iv30')!.aligned_with_market_date,false);assert.equal(f.metrics.find(m=>m.id==='earnings_revision')!.value,null);
+ assert.equal(f.metrics.find(m=>m.id==='advancers_pct')!.status,'stale');assert.equal(f.metrics.find(m=>m.id==='funding_spread_on')!.value,0);assert.equal(f.metrics.find(m=>m.id==='local_iv30')!.aligned_with_market_date,false);assert.equal(f.metrics.find(m=>m.id==='earnings_revision')!.value,null);
+});
+test('the 25-item feed switches spread definition without carrying seven-day values into the overnight series',()=>{
+ const d=base();
+ d.series.push(s('funding_spread',[[dates[4],-5]]),s('funding_spread_on',[[dates[5],2]]));
+ const current=makeFeed(d,now);
+ assert.equal(current.metric_count,25);
+ assert.equal(current.metrics.find(m=>m.id==='funding_spread_on')!.change_1,null);
+ assert.equal(current.metrics.find(m=>m.id==='funding_spread'),undefined);
+ d.series[0].points=d.series[0].points.slice(0,5);
+ const legacy=makeFeed(d,now);
+ assert.equal(legacy.metric_count,25);
+ assert.equal(legacy.metrics.find(m=>m.id==='funding_spread')!.value,-5);
 });
 test('missing intermediate sessions do not turn last observation into daily change',()=>{
  const d=base();d.series.push(s('ema20_gap',[[dates[4],-3],[dates[6],-2]]));
